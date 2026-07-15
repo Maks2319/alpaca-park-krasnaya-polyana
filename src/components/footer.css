@@ -1,0 +1,15 @@
+.footer {
+  padding: 2rem clamp(1.5rem, 5vw, 3.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+  color: var(--ink-soft);
+}
+.footer .word { font-size: 1.1rem; }
+.footer .links { display: flex; gap: 1.5rem; }
+.footer a { text-decoration: none; color: var(--ink-soft); }
+.footer a:hover { color: var(--ink); }

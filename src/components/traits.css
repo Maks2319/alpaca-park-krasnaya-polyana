@@ -1,0 +1,16 @@
+.lead { max-width: 60ch; }
+.lead p { font-size: var(--fs-body-lg); color: var(--ink-soft); margin-top: 0.9rem; }
+
+.grid3 {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+.trait { border-top: 1px solid var(--line); padding-top: 1.5rem; }
+.trait .word { font-size: clamp(2.2rem, 3vw, 3.4rem); }
+.trait p { margin-top: 0.9rem; color: var(--ink-soft); max-width: 32ch; }
+
+@media (max-width: 760px) {
+  .grid3 { grid-template-columns: 1fr; }
+}

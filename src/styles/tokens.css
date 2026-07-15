@@ -1,21 +1,24 @@
-/* Парк Альпак · Красная Поляна — design tokens
-   Palette drawn from the site itself: fog over the ridge, spruce shadow,
-   the raspberry dye alpaca fibre is dipped in at shearing fairs, the
-   glacial teal of the Мзымта, and undyed caramel fleece. */
-
 :root {
   --ground: #edf1ee;
   --surface: #f7f5ef;
+  --surface-2: #ffffffb3;
   --ink: #1b2621;
   --ink-soft: #445046;
   --line: rgba(27, 38, 33, 0.14);
 
-  --accent: #d94a67;       /* fibre-dye raspberry */
-  --accent-ink: #fdf3f0;   /* text set on the accent */
-  --accent-2: #3e7c82;     /* glacial teal */
-  --tan: #b98552;          /* undyed caramel fleece */
+  --accent: #d94a67;
+  --accent-ink: #fdf3f0;
+  --accent-2: #3e7c82;
+  --tan: #b98552;
 
   --shadow-color: 27, 38, 33;
+
+  --sky-top: #bcd8de;
+  --sky-bottom: #edf1ee;
+  --mountain-far: #9fb9bd;
+  --mountain-mid: #5f8288;
+  --mountain-near: #2f4a48;
+  --cloud: #ffffff;
 
   --font-display: 'Unbounded', 'Arial Black', sans-serif;
   --font-body: 'PT Serif', Georgia, 'Times New Roman', serif;
@@ -36,6 +39,7 @@
   :root {
     --ground: #101712;
     --surface: #182019;
+    --surface-2: #18201980;
     --ink: #eaefe9;
     --ink-soft: #b7c2ba;
     --line: rgba(234, 239, 233, 0.14);
@@ -46,6 +50,14 @@
     --tan: #d9a876;
 
     --shadow-color: 0, 0, 0;
+
+    --sky-top: #0b1f26;
+    --sky-bottom: #101712;
+    --mountain-far: #1c3338;
+    --mountain-mid: #142523;
+    --mountain-near: #0b1613;
+    --cloud: #3a4a48;
+
     color-scheme: dark;
   }
 }
@@ -53,31 +65,41 @@
 :root[data-theme='dark'] {
   --ground: #101712;
   --surface: #182019;
+  --surface-2: #18201980;
   --ink: #eaefe9;
   --ink-soft: #b7c2ba;
   --line: rgba(234, 239, 233, 0.14);
-
   --accent: #ff7690;
   --accent-ink: #241014;
   --accent-2: #7bd0d6;
   --tan: #d9a876;
-
   --shadow-color: 0, 0, 0;
+  --sky-top: #0b1f26;
+  --sky-bottom: #101712;
+  --mountain-far: #1c3338;
+  --mountain-mid: #142523;
+  --mountain-near: #0b1613;
+  --cloud: #3a4a48;
   color-scheme: dark;
 }
 
 :root[data-theme='light'] {
   --ground: #edf1ee;
   --surface: #f7f5ef;
+  --surface-2: #ffffffb3;
   --ink: #1b2621;
   --ink-soft: #445046;
   --line: rgba(27, 38, 33, 0.14);
-
   --accent: #d94a67;
   --accent-ink: #fdf3f0;
   --accent-2: #3e7c82;
   --tan: #b98552;
-
   --shadow-color: 27, 38, 33;
+  --sky-top: #bcd8de;
+  --sky-bottom: #edf1ee;
+  --mountain-far: #9fb9bd;
+  --mountain-mid: #5f8288;
+  --mountain-near: #2f4a48;
+  --cloud: #ffffff;
   color-scheme: light;
 }

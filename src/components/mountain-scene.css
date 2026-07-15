@@ -1,0 +1,61 @@
+.scene {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.scene-sky {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 78%);
+  transition: background 0.4s ease;
+}
+
+.cloud {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(20px);
+  background: var(--cloud);
+  opacity: 0.5;
+}
+.cloud--a { width: 220px; height: 60px; top: 12%; left: 8%; }
+.cloud--b { width: 300px; height: 70px; top: 22%; left: 48%; opacity: 0.4; }
+.cloud--c { width: 170px; height: 50px; top: 8%; left: 68%; opacity: 0.45; }
+
+.ridge {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.ridge svg { display: block; width: 100%; height: 100%; }
+
+.ridge--far { height: 58%; }
+.ridge--far path { fill: var(--mountain-far); }
+
+.ridge--mid { height: 70%; }
+.ridge--mid path { fill: var(--mountain-mid); }
+
+.ridge--near { height: 86%; }
+.ridge--near path:not(.snowcap) { fill: var(--mountain-near); }
+.ridge--near .snowcap { fill: var(--cloud); opacity: 0.9; }
+
+.alpaca {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+}
+.alpaca--1 { left: 20%; bottom: 9%; }
+.alpaca--2 { left: 47%; bottom: 6%; width: 34px; height: 34px; }
+.alpaca--3 { left: 72%; bottom: 11%; }
+
+.alpaca-mark { width: 100%; height: 100%; overflow: visible; }
+.alpaca-ear, .alpaca-face { fill: var(--tan); }
+.alpaca-eye { fill: var(--ink); }
+
+.scene-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, var(--ground) 100%);
+  pointer-events: none;
+}

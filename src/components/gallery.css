@@ -1,0 +1,38 @@
+.head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.head-row h2 { font-size: var(--fs-h2); max-width: 20ch; }
+
+.strip {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+.card { display: flex; flex-direction: column; gap: 0.75rem; }
+.portrait { aspect-ratio: 1; border-radius: 6px; position: relative; overflow: hidden; }
+.portrait .ear { position: absolute; width: 34%; height: 46%; top: 4%; border-radius: 50% 50% 45% 45%; background: rgba(var(--shadow-color), 0.16); }
+.portrait .ear.l { left: 16%; transform: rotate(-8deg); }
+.portrait .ear.r { right: 16%; transform: rotate(8deg); }
+.portrait .face { position: absolute; left: 50%; top: 58%; transform: translate(-50%, -50%); width: 62%; height: 58%; border-radius: 44% 44% 50% 50%; background: rgba(var(--shadow-color), 0.16); }
+.portrait .eye { position: absolute; width: 7%; height: 7%; border-radius: 50%; background: var(--ground); top: 56%; }
+.portrait .eye.l { left: 38%; }
+.portrait .eye.r { right: 38%; }
+
+.p1 { background: var(--accent); }
+.p2 { background: var(--accent-2); }
+.p3 { background: var(--tan); }
+.p4 { background: var(--ink); }
+.p4 .ear, .p4 .face { background: rgba(255, 255, 255, 0.18); }
+.p5 { background: var(--accent-2); }
+.p6 { background: var(--tan); }
+
+.name { font-family: var(--font-display); font-weight: 700; font-size: 1rem; }
+.trait-cap { font-family: var(--font-mono); font-size: 0.75rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.03em; }
+
+@media (max-width: 900px) { .strip { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 520px) { .strip { grid-template-columns: repeat(2, 1fr); } }

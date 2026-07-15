@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/Unbounded-Regular.subset.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/Unbounded-Medium.subset.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Unbounded';
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/Unbounded-ExtraBold.subset.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/PTSerif-Regular.subset.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url('../assets/fonts/PTSerif-Italic.subset.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/PTSerif-Bold.subset.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('../assets/fonts/JetBrainsMono-Medium.subset.woff2') format('woff2');
+}

@@ -1,5 +1,7 @@
 *, *::before, *::after { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
+html, body, #root { margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
 
 body {
   background: var(--ground);
@@ -8,6 +10,7 @@ body {
   font-size: var(--fs-body);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, .display {
@@ -32,11 +35,17 @@ p + p { margin-top: 1em; }
 
 .tabular { font-variant-numeric: tabular-nums; }
 
+.section { padding: clamp(2.5rem, 6vw, 5rem) clamp(1.5rem, 5vw, 3.5rem); }
+.wrap { max-width: 1180px; margin: 0 auto; }
+
 a { color: inherit; }
 
-button, .btn {
+button {
   font-family: var(--font-mono);
   cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
 }
 
 :focus-visible {
@@ -48,5 +57,6 @@ button, .btn {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;
     transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
   }
 }

@@ -1,0 +1,33 @@
+.directions { background: var(--surface); border-top: 1px solid var(--line); }
+.directions-wrap {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+.directions h2 { font-size: var(--fs-h1); }
+.directions .addr { margin-top: 1.25rem; font-size: var(--fs-body-lg); color: var(--ink-soft); max-width: 42ch; }
+.directions dl {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1.25rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+}
+.directions dt { color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.04em; }
+.directions dd { margin: 0; }
+
+.route {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 2rem 1.5rem;
+  background: var(--ground);
+}
+.stop { display: flex; align-items: center; gap: 0.9rem; padding: 0.7rem 0; font-family: var(--font-mono); font-size: 0.85rem; }
+.stop .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--ink-soft); flex-shrink: 0; }
+.stop:first-child .dot, .stop:last-child .dot { background: var(--accent); }
+.stop:not(:last-child) { border-bottom: 1px dashed var(--line); }
+.stop .label strong { display: block; font-family: var(--font-body); font-size: 0.95rem; font-weight: 700; }
+
+@media (max-width: 760px) { .directions-wrap { grid-template-columns: 1fr; } }
