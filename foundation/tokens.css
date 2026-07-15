@@ -1,0 +1,83 @@
+/* Парк Альпак · Красная Поляна — design tokens
+   Palette drawn from the site itself: fog over the ridge, spruce shadow,
+   the raspberry dye alpaca fibre is dipped in at shearing fairs, the
+   glacial teal of the Мзымта, and undyed caramel fleece. */
+
+:root {
+  --ground: #edf1ee;
+  --surface: #f7f5ef;
+  --ink: #1b2621;
+  --ink-soft: #445046;
+  --line: rgba(27, 38, 33, 0.14);
+
+  --accent: #d94a67;       /* fibre-dye raspberry */
+  --accent-ink: #fdf3f0;   /* text set on the accent */
+  --accent-2: #3e7c82;     /* glacial teal */
+  --tan: #b98552;          /* undyed caramel fleece */
+
+  --shadow-color: 27, 38, 33;
+
+  --font-display: 'Unbounded', 'Arial Black', sans-serif;
+  --font-body: 'PT Serif', Georgia, 'Times New Roman', serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --fs-display: clamp(3.4rem, 3vw + 2.6rem, 8.5rem);
+  --fs-h1: clamp(2.4rem, 1.6vw + 1.9rem, 4.2rem);
+  --fs-h2: clamp(1.5rem, 0.8vw + 1.2rem, 2.1rem);
+  --fs-body-lg: clamp(1.15rem, 0.3vw + 1.05rem, 1.375rem);
+  --fs-body: 1.0625rem;
+  --fs-small: 0.875rem;
+  --fs-mono: 0.9375rem;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #101712;
+    --surface: #182019;
+    --ink: #eaefe9;
+    --ink-soft: #b7c2ba;
+    --line: rgba(234, 239, 233, 0.14);
+
+    --accent: #ff7690;
+    --accent-ink: #241014;
+    --accent-2: #7bd0d6;
+    --tan: #d9a876;
+
+    --shadow-color: 0, 0, 0;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --ground: #101712;
+  --surface: #182019;
+  --ink: #eaefe9;
+  --ink-soft: #b7c2ba;
+  --line: rgba(234, 239, 233, 0.14);
+
+  --accent: #ff7690;
+  --accent-ink: #241014;
+  --accent-2: #7bd0d6;
+  --tan: #d9a876;
+
+  --shadow-color: 0, 0, 0;
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --ground: #edf1ee;
+  --surface: #f7f5ef;
+  --ink: #1b2621;
+  --ink-soft: #445046;
+  --line: rgba(27, 38, 33, 0.14);
+
+  --accent: #d94a67;
+  --accent-ink: #fdf3f0;
+  --accent-2: #3e7c82;
+  --tan: #b98552;
+
+  --shadow-color: 27, 38, 33;
+  color-scheme: light;
+}
